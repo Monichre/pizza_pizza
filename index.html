@@ -5,34 +5,94 @@
     	<meta name="description" content="Your description goes here">
     	<meta name="keywords" content="one, two, three">
 	
-		<title>Blank Template</title>
+		<title>Pizza Pizza</title>
 		
 		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
 		<link rel="stylesheet" href="css/style.css">
 
 	</head>
 	<body>
 
-		<header>
-			<nav>
-				<ul>
-					<li>nav 1</li>
-					<li>nav 2</li>
-					<li>nav 3</li>
-				</ul>
-			</nav>
+		<header class="clearfix">
+			<h1>Pizza Deez</h1>
+			<ul>
+				<li>nav 1</li>
+				<li>nav 2</li>
+				<li>nav 3</li>
+			</ul>
+			
 		</header>
 
-		<main>
+		<main class="clearfix">
+			<div class="content">
+				<h2>Welcome to Pizza Deez</h2>
+				<p>Home of the Ol' Dirty</p>
+				<p>Fresh baked crust made from scratch! Pick your toppings and order away!</p>
+				<img src="images/tower.png">
+			</div>
+			<form id = "pizza-form" class="clearfix">
+				<div class="sizes">
+				<h2>Sizes</h2>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios1" value="small" checked>
+					    Small
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios2" value="medium">
+					    Medium
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios3" value="large">
+					    Large
+					  </label>
+					</div>
+				</div>
+				<div class="toppings">
+					<h2>Toppings</h2>
+					<div class="checkbox"><!--pepperoni check box-->
+					  <label>
+					    <input type="checkbox" value="pepperoni">
+					    Pepperoni
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+					    <input type="checkbox" value="mushrooms">
+					    Mushrooms
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+					    <input type="checkbox" value="pineapple">
+					    Pineapple
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+					    <input type="checkbox" value="anchovies">
+					    Anchovies
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+					    <input type="checkbox" value="sausage">
+					    Sausage
+					  </label>
+					</div>
+				</div><!-- end of TOPPINGS check boxes-->
+			</form><!--END OF FORM GROUP -->
+			<div id="show-result" class="clearfix">
+				<h2>Your Order:</h2>
+				<ul></ul>
+			</div>
 		</main>
-
-		<aside>
-		</aside>
-
-		<footer>
-		</footer>
-
+		
 		<!-- javascript -->
 		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="js/main.js"></script>

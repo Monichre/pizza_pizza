@@ -92,12 +92,17 @@ ul {
      width: 33.333%;
 }
 
-li {
+header li {
      list-style-type: none;
      display: inline-block;
-     color: white;
+     color: black;
      font-family: font2;
      width: 30%;
+     font-size: 15px;
+}
+
+header li:hover {
+     font-size: 25px;
 }
 
 main {
@@ -116,6 +121,11 @@ h2{
      font-size: 30px;
      margin: 0;
      padding-bottom: 40px;
+     text-align: center;
+}
+
+#show-result h2{
+     margin-bottom: 10px;
 }
 .content{
      width: 25%;
@@ -123,8 +133,13 @@ h2{
 }
 
 #show-result {
-     width: 25%;
+     width: 30%;
      float: left
+}
+
+.checkbox, .radio {
+     margin: auto;
+     text-align: center;
 }
 
 .sizes,.toppings, #show-result {
@@ -153,10 +168,19 @@ form {
      float: left;
 }
 
+img {
+     float: left;
+}
+
 option, label {
      color: white;
      font-family: font2;
 
+}
+
+.leaning {
+     margin-left: 20px;
+     padding-left: 25px; 
 }
 
 button {
@@ -165,7 +189,13 @@ button {
      margin-top: 20px;
      display: block;
      text-align: center;
+     float: left;
+     background-color: none!important;
+     font-family: font2;
+     padding:10px;
+     color: white;
 }
+
 
 
 

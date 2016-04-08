@@ -15,6 +15,13 @@ function Order(){
 	this.total = [];
 }
 
+Order.prototype.addPrice = function(){
+	var price = 0;
+	this.total.forEach(function(x){
+		 price += x;
+	});
+	return price;
+};
 
 //************************************ UI LOGIC ****************************//
 
@@ -54,7 +61,7 @@ $(document).ready(function(){
 	
 	
 
-	console.log(newOrder.total);
+	console.log(newOrder.addPrice());
 	
 	
 

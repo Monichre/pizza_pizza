@@ -31,24 +31,24 @@
 				<p>Fresh baked crust made from scratch! Pick your toppings and order away!</p>
 				<img src="images/tower.png">
 			</div>
-			<form id = "pizza-form" class="clearfix">
+			<form id ="pizza-form" class="clearfix">
 				<div class="sizes">
 				<h2>Sizes</h2>
 					<div class="radio">
 					  <label>
-					    <input type="radio" name="optionsRadios" id="optionsRadios1" value="small" checked>
+					    <input type="radio" name="optionsRadios" id="small" value="12" checked>
 					    Small
 					  </label>
 					</div>
 					<div class="radio">
 					  <label>
-					    <input type="radio" name="optionsRadios" id="optionsRadios2" value="medium">
+					    <input type="radio" name="optionsRadios" id="medium" value="15">
 					    Medium
 					  </label>
 					</div>
 					<div class="radio">
 					  <label>
-					    <input type="radio" name="optionsRadios" id="optionsRadios3" value="large">
+					    <input type="radio" name="optionsRadios" id="large" value="20">
 					    Large
 					  </label>
 					</div>
@@ -57,39 +57,40 @@
 					<h2>Toppings</h2>
 					<div class="checkbox"><!--pepperoni check box-->
 					  <label>
-					    <input type="checkbox" value="pepperoni">
+					    <input type="checkbox" name = "optionsCheckbox"value="1" id="pepperoni">
 					    Pepperoni
 					  </label>
 					</div>
 					<div class="checkbox">
 					  <label>
-					    <input type="checkbox" value="mushrooms">
+					    <input type="checkbox" name = "optionsCheckbox"value="1" id="mushrooms">
 					    Mushrooms
 					  </label>
 					</div>
 					<div class="checkbox">
 					  <label>
-					    <input type="checkbox" value="pineapple">
+					    <input type="checkbox" name = "optionsCheckbox"value="1" id="pineapple">
 					    Pineapple
 					  </label>
 					</div>
 					<div class="checkbox">
 					  <label>
-					    <input type="checkbox" value="anchovies">
+					    <input type="checkbox" name = "optionsCheckbox"value="1" id="anchovies">
 					    Anchovies
 					  </label>
 					</div>
 					<div class="checkbox">
 					  <label>
-					    <input type="checkbox" value="sausage">
+					    <input type="checkbox" name = "optionsCheckbox"value="1" id="sausage">
 					    Sausage
 					  </label>
 					</div>
 				</div><!-- end of TOPPINGS check boxes-->
+				<button type="submit" class="btn btn-primary">Order</button>
 			</form><!--END OF FORM GROUP -->
 			<div id="show-result" class="clearfix">
 				<h2>Your Order:</h2>
-				<ul></ul>
+				<ul id="order"></ul>
 			</div>
 		</main>
 		

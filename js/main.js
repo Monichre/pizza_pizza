@@ -1,7 +1,7 @@
 var mushrooms =  {name: "mushrooms", price: 1};
-var pepperoni =  {name: "pepperoni", price: 1};
-var sausage =  {name: "sausage", price: 1};
-var anchovies =  {name: "anchovies", price: 1};
+var pepperoni =  {name: "pepperoni", price: 2};
+var sausage =    {name: "sausage", price: 2};
+var anchovies =  {name: "anchovies", price: 5};
 var pineapple =  {name: "pineapple", price: 1};
 
 
@@ -29,17 +29,21 @@ $(document).ready(function(){
 
 
 	var newPizza = new Pizza(size, price);
-	var newOrder = new Order()
+	var newOrder = new Order();
 
+	console.log(newPizza);
+	
 	
 	
 	var selectedToppings = $('.checkbox :checked').map(function() {
 		return this.id;}).get();
+
+	console.log(selectedToppings);
 	
-	selectedToppings.forEach(function(topping){
-		for (var i = 0; i < selectedToppings.length; i++){
-			if (topping === newPizza.toppings.name[i]){
-			newOrder.total.push(newPizza.toppings.price[i]);
+	newPizza.toppings.forEach(function(topping){
+		for (var i = 0; i < newPizza.toppings.length; i++){
+			if (topping.name === selectedToppings[i]){
+			newOrder.total.push(topping.price);
 		}
 
 		}
@@ -51,9 +55,7 @@ $(document).ready(function(){
 	
 
 	console.log(newOrder.total);
-	console.log(size);
-	console.log(price);
-	console.log(toppings);
+	
 	
 
 	$("#show-result").show();
